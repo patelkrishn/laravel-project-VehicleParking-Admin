@@ -14,9 +14,12 @@ class SlotController extends Controller
      */
     public function index()
     {
-        //
+        return view('slots');
     }
-
+    public function addNew()
+    {
+        return view('addSlots');
+    }
     /**
      * Show the form for creating a new resource.
      *
