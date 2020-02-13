@@ -19,5 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('slots', 'SlotController');
-Route::get('slots/add', 'SlotController@addNew');
+Route::get('/slots/add','SlotController@addNew');
+Route::resource('/slots', 'SlotController');

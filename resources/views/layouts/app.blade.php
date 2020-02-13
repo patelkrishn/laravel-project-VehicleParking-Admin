@@ -137,7 +137,7 @@ to get the desired effect
                             </p>
                         </a>
                     </li>
-                    @if (Request::path()=='slots')
+                    @if (Request::path()=='slots' || Request::path()=='slots/add')
                         <li class="nav-item has-treeview  menu-open">
                     @else
                         <li class="nav-item has-treeview">
@@ -157,7 +157,7 @@ to get the desired effect
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/slots/add" class="nav-link {{ Request::path()=='slots/add' ? 'active' : '' }}">
+                                    <a href="{{asset('slots/add')}}" class="nav-link {{ Request::path()=='slots/add' ? 'active' : '' }}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Add New</p>
                                     </a>
